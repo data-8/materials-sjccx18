@@ -1,5 +1,5 @@
 test = {
-  'name': 'Question 1_2',
+  'name': '',
   'points': 1,
   'suites': [
     {
@@ -40,13 +40,36 @@ test = {
         },
         {
           'code': r"""
-          >>> book_title_words
-          array(['Eats', 'Shoots', 'and Leaves'], 
-                dtype='<U10')
+          >>> len(book_title_words)
+          3
           """,
           'hidden': False,
           'locked': False
-        }
+        },
+        {
+          'code': r"""
+          >>> book_title_words.item(0) == 'Eats'
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> book_title_words.item(1) == 'Shoots'
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
+        {
+          'code': r"""
+          >>> book_title_words.item(2) == 'and Leaves'
+          True
+          """,
+          'hidden': False,
+          'locked': False
+        },
       ],
       'scored': True,
       'setup': '',
